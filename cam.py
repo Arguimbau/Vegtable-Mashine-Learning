@@ -18,7 +18,6 @@ while (True):
 
     # Preprocess the image
     img = cv2.resize(frame, (100, 100))  # Resize the image to the target size
-    img = img / 255.0  # Scale the pixel values (if necessary)
     img = np.expand_dims(img, axis=0)  # Expand the dimensions
 
     # Use the model to make a prediction
